@@ -28,18 +28,18 @@ fn main() {
     }
 }
 
-fn convert_to_farenheits(celsius: i32) -> f32 {
-    celsius as f32 * (9.0 / 5.0) + 32.0
+fn convert_to_farenheits(celsius: i32) -> f64 {
+    celsius as f64 * (9.0 / 5.0) + 32.0
 }
 
-fn convert_to_celsius(farenheits: i32) -> f32 {
-    (farenheits - 32) as f32 * (5.0 / 9.0)   
+fn convert_to_celsius(farenheits: i32) -> f64 {
+    (farenheits - 32) as f64 * (5.0 / 9.0)   
 }
 
 fn prompt_input() -> Option<(i32, char)> {
     let mut input = String::new();
 
-    let re = Regex::new(r"^-?(\d+)(F|C)$").unwrap();
+    let re = Regex::new(r"^(-?\d+)(F|C)$").unwrap();
 
     stdin()
         .read_line(&mut input)
