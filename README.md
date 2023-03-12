@@ -11,3 +11,4 @@ Run: `cargo run --bin guessing-game`
 There are the examples from rust book chapter 3. Also I have solved additional tasks:
 
 - Convert temperature from F to C or vice versa. Run: `cargo run --bin convert-temp`
+- Get n-th Fibonacci number. Run: `cargo run --bin nth-fib`
