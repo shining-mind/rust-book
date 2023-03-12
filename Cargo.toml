@@ -5,5 +5,6 @@ members = [
     "chapter-03/branches",
     "chapter-03/functions",
     "chapter-03/loops",
-    "chapter-03/variables"
+    "chapter-03/variables",
+    "chapter-03/convert-temp"
 ]
