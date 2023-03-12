@@ -1,6 +1,8 @@
 use std::io::{stdin};
 use std::collections::{HashMap};
 
+const PRINT_AS_E: u128 = 1e9 as u128;
+
 fn main() {
     let mut cache: HashMap<u32, u128> = HashMap::new();
     
@@ -9,7 +11,7 @@ fn main() {
         match prompt_input() {
             Some(n) => {
                 let result = nth_fib(n, &mut cache);
-                if result > 1e9 as u128 {
+                if result > PRINT_AS_E {
                     println!("-> {n}th fib = {result:.3e}");
                 } else {
                     println!("-> {n}th fib = {result}");
