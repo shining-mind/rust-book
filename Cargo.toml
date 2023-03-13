@@ -7,5 +7,6 @@ members = [
     "chapter-03/loops",
     "chapter-03/variables",
     "chapter-03/convert-temp",
-    "chapter-03/nth-fib"
+    "chapter-03/nth-fib",
+    "chapter-04/strings",
 ]
