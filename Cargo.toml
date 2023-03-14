@@ -9,5 +9,6 @@ members = [
     "chapter-03/convert-temp",
     "chapter-03/nth-fib",
     "chapter-04/strings",
-    "chapter-05/area-calc"
+    "chapter-05/area-calc",
+    "chapter-06/enums"
 ]
