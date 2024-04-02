@@ -10,5 +10,7 @@ members = [
     "chapter-03/nth-fib",
     "chapter-04/strings",
     "chapter-05/area-calc",
-    "chapter-06/enums"
+    "chapter-06/enums",
+    "chapter-07/backyard",
+    "chapter-07/restaurant"
 ]
