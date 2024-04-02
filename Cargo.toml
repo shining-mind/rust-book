@@ -1,6 +1,7 @@
 [workspace]
-
+resolver = "2"
 members = [
+    "chapter-01/hello-world",
     "chapter-02/guessing-game",
     "chapter-03/branches",
     "chapter-03/functions",
@@ -12,5 +13,5 @@ members = [
     "chapter-05/area-calc",
     "chapter-06/enums",
     "chapter-07/backyard",
-    "chapter-07/restaurant"
+    "chapter-07/restaurant",
 ]
