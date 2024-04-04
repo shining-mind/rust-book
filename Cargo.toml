@@ -14,4 +14,5 @@ members = [
     "chapter-06/enums",
     "chapter-07/backyard",
     "chapter-07/restaurant",
+    "chapter-03/i-overflows",
 ]
