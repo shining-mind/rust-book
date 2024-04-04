@@ -33,8 +33,8 @@ fn ask() -> u32 {
         .read_line(&mut guess)
         .expect("Failed to read line");
 
-    return match guess.trim().parse::<u32>() {
+    match guess.trim().parse() {
         Ok(value) => value,
         Err(_) => ask()
-    };
+    }
 }
