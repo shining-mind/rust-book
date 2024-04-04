@@ -24,13 +24,13 @@ fn main() {
 
 fn nth_fib(n: u32, cache: &mut HashMap<u32, u128>) -> u128 {
     if let Some(cached) = cache.get(&n) {
-        return *cached
-    }
-    if n <= 1 {
+        *cached
+    } else if n <= 1 {
         n.into()
     } else {
         let result = nth_fib(n - 1, cache) + nth_fib(n - 2, cache);
         cache.insert(n, result);
+
         result
     }
 }
