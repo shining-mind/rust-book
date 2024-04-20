@@ -100,3 +100,40 @@ arr[index]; // panic!
 Use for loop to iterate the collection instead of while loop with index as it 
 doesn't add runtime check for the index.
 
+## Functions
+
+### Statements and expressions
+
+* **Statements** are instructions that perform some action and do not return a value.
+* **Expressions** evaluate to a resultant value. Let’s look at some examples.
+
+If you add a semicolon (;) to the end of the expression it will become a statement:
+
+```rust
+fn foo() -> u32 {
+  let y: u32 = x + 1; // Statement
+  y + 1 // Expression which will be returned as the result of the function
+}
+```
+
+It's an expression and a syntactic scope:
+
+```rust
+{ /* ... */ } 
+```
+
+## Control flow
+
+`if` is an expression:
+
+```rust
+let x = 3;
+let y = if x > 3 {
+  true
+} else {
+  false
+};
+
+println!("{y}") // false
+```
+
