@@ -58,4 +58,45 @@ let guess: u32 = guess.trim().parse().expect("Please type a number!");
 
 ### Compound types
 
-TODO
+#### Tuple
+
+```rust
+let tup: (i32, f64, u8) = (500, 6.4, 1);
+
+// Destructuring
+let (mut x, mut y, mut z) = tup;
+
+// Access via element position
+x = tup.0;
+y = tup.1;
+z = tup.2;
+```
+
+#### Array
+
+```rust
+let arr: [i32; 5] = [1, 2, 3, 4, 5];
+
+arr[0]; // 1
+arr[2]; // 3
+```
+
+Shorthand for creating an array:
+
+```rust
+let arr = [3; 5]; // [3, 3, 3, 3, 3]
+```
+
+Rust performs runtime check when program tries to access an arbitrary index:
+
+```rust
+let arr = [1, 2, 3];
+
+let index = 3;
+
+arr[index]; // panic!
+```
+
+Use for loop to iterate the collection instead of while loop with index as it 
+doesn't add runtime check for the index.
+
